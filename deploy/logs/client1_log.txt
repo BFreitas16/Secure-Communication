@@ -1,0 +1,20 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.4.3)
+
+2021-05-20 11:49:08.943  INFO 4608 --- [           main] p.u.t.s.secureclient.ClientApplication   : Starting ClientApplication v1.0 using Java 11.0.11 on ubuntu with PID 4608 (/home/thunder-marks/IdeaProjects/Secure-Communication/secure-client/target/secure-client-1.0.jar started by thunder-marks in /home/thunder-marks/IdeaProjects/Secure-Communication)
+2021-05-20 11:49:08.954  INFO 4608 --- [           main] p.u.t.s.secureclient.ClientApplication   : No active profile set, falling back to default profiles: default
+2021-05-20 11:49:10.326  INFO 4608 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9001 (http)
+2021-05-20 11:49:10.347  INFO 4608 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-05-20 11:49:10.348  INFO 4608 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-05-20 11:49:10.433  INFO 4608 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-05-20 11:49:10.433  INFO 4608 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1367 ms
+2021-05-20 11:49:10.656  INFO 4608 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-20 11:49:10.838  INFO 4608 --- [           main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2021-05-20 11:49:10.869  INFO 4608 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9001 (http) with context path ''
+2021-05-20 11:49:10.882  INFO 4608 --- [           main] p.u.t.s.secureclient.ClientApplication   : Started ClientApplication in 2.688 seconds (JVM running for 3.23)

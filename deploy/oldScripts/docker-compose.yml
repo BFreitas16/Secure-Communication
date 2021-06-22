@@ -1,0 +1,72 @@
+version: '3.4'
+services:
+  secure-server:
+    container_name: secure-server
+    build:
+      context: ../secure-server/
+      dockerfile: Dockerfile
+    network_mode: host
+    image: secure-server:latest
+    command: --server.port=8080
+    ports:
+      - 8080:8080
+
+  secure-client-1:
+    container_name: secure-client-1
+    build:
+      context: ../secure-client/
+      dockerfile: Dockerfile
+    network_mode: host
+    image: secure-client:latest
+    command: --server.port=9001 1
+    ports:
+      - 9001:9001
+
+
+  # secure-client-2:
+  #   container_name: secure-client-2
+  #   build:
+  #     context: ../secure-client/
+  #     dockerfile: Dockerfile
+  #   network_mode: host
+  #   image: secure-client:latest
+  #   command: --server.port=9002 2
+  #   ports:
+  #     - 9002:9002
+
+
+  # secure-client-3:
+  #   container_name: secure-client-3
+  #   build:
+  #     context: ../secure-client/
+  #     dockerfile: Dockerfile
+  #   network_mode: host
+  #   image: secure-client:latest
+  #   command: --server.port=9003 3
+  #   ports:
+  #     - 9003:9003
+
+
+  # secure-client-4:
+  #   container_name: secure-client-4
+  #   build:
+  #     context: ../secure-client/
+  #     dockerfile: Dockerfile
+  #   network_mode: host
+  #   image: secure-client:latest
+  #   command: --server.port=9004 4
+  #   ports:
+  #     - 9004:9004
+
+
+  # secure-special-client:
+  #   container_name: secure-special-client
+  #   build:
+  #     context: ../secure-special-client/
+  #     dockerfile: Dockerfile
+  #   network_mode: host
+  #   image: secure-special-client:latest
+  #   command: --server.port=9100 100
+  #   ports:
+  #     - 9100:9100
+

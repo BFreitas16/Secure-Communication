@@ -1,0 +1,40 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.4.3)
+
+2021-05-13 10:50:11.625  INFO 49016 --- [           main] p.u.t.s.secureclient.ClientApplication   : Starting ClientApplication v1.0 using Java 11.0.11 on ubuntu with PID 49016 (/home/allex/Secure-Communication/secure-client/target/secure-client-1.0.jar started by allex in /home/allex/Secure-Communication)
+2021-05-13 10:50:11.632  INFO 49016 --- [           main] p.u.t.s.secureclient.ClientApplication   : No active profile set, falling back to default profiles: default
+2021-05-13 10:50:13.084  INFO 49016 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9002 (http)
+2021-05-13 10:50:13.097  INFO 49016 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-05-13 10:50:13.097  INFO 49016 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-05-13 10:50:13.163  INFO 49016 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-05-13 10:50:13.164  INFO 49016 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1381 ms
+2021-05-13 10:50:13.438  INFO 49016 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-13 10:50:13.627  INFO 49016 --- [           main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2021-05-13 10:50:13.690  INFO 49016 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9002 (http) with context path ''
+2021-05-13 10:50:13.708  INFO 49016 --- [           main] p.u.t.s.secureclient.ClientApplication   : Started ClientApplication in 2.888 seconds (JVM running for 3.326)
+2021-05-13 10:50:23.083  INFO 49016 --- [nio-9002-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-13 10:50:23.083  INFO 49016 --- [nio-9002-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-05-13 10:50:23.084  INFO 49016 --- [nio-9002-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+Submitting report at epoch: 0
+[Client 2] WRITE Byzantine Atomic register - received secureDTO
+[Client 2] WRITE Byzantine Atomic register - received secureDTO
+[Client 2] WRITE Byzantine Atomic register - received secureDTO
+[Client 2] WRITE Byzantine Atomic register - received secureDTO
+[Client 2] Write Byzantine Atomic register obtained minimum quorum to execute the write request!
+
+[Client2] Sending report request for user 2 at epoch0
+[Client 2] READ Byzantine Atomic register - received secureDTO
+[Client 2] READ Byzantine Atomic register - received secureDTO
+[Client 2] READ Byzantine Atomic register - received secureDTO
+[Client 2] READ Byzantine Atomic register - received secureDTO
+[Client id:2] Obtained byzantine quorum for the atomic READ operation!
+[Client id:2] READ Byzantine Atomic register - Sent READCOMPLETE message to serverId: 3
+[Client id:2] READ Byzantine Atomic register - Sent READCOMPLETE message to serverId: 2
+[Client id:2] READ Byzantine Atomic register - Sent READCOMPLETE message to serverId: 1
+[Client id:2] READ Byzantine Atomic register - Sent READCOMPLETE message to serverId: 4

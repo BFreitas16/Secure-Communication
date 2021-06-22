@@ -1,0 +1,109 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.4.3)
+
+2021-05-20 12:41:00.364  INFO 4853 --- [           main] p.u.t.s.secureserver.ServerApplication   : Starting ServerApplication v1.0 using Java 11.0.11 on ubuntu with PID 4853 (/home/thunder-marks/IdeaProjects/Secure-Communication/secure-server/target/secure-server-1.0.jar started by thunder-marks in /home/thunder-marks/IdeaProjects/Secure-Communication)
+2021-05-20 12:41:00.373  INFO 4853 --- [           main] p.u.t.s.secureserver.ServerApplication   : No active profile set, falling back to default profiles: default
+2021-05-20 12:41:03.306  INFO 4853 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-20 12:41:03.373  INFO 4853 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 25 ms. Found 0 JPA repository interfaces.
+2021-05-20 12:41:05.910  INFO 4853 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9202 (http)
+2021-05-20 12:41:06.005  INFO 4853 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-05-20 12:41:06.006  INFO 4853 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-05-20 12:41:06.228  INFO 4853 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-05-20 12:41:06.244  INFO 4853 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5543 ms
+2021-05-20 12:41:07.579  INFO 4853 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-05-20 12:41:07.960  INFO 4853 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-05-20 12:41:08.604  INFO 4853 --- [           main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-05-20 12:41:09.018  INFO 4853 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-05-20 12:41:10.052  INFO 4853 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-05-20 12:41:10.150  INFO 4853 --- [           main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2021-05-20 12:41:12.822  INFO 4853 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-05-20 12:41:13.294  INFO 4853 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-20 12:41:13.875  WARN 4853 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-05-20 12:41:14.829  INFO 4853 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-20 12:41:16.008  INFO 4853 --- [           main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2021-05-20 12:41:16.333  INFO 4853 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9202 (http) with context path ''
+2021-05-20 12:41:16.356  INFO 4853 --- [           main] p.u.t.s.secureserver.ServerApplication   : Started ServerApplication in 18.378 seconds (JVM running for 21.951)
+[Server Id: 2] Server heartbeat at 2021-05-20 12:41:21.35
+[Server Id: 2] Server heartbeat at 2021-05-20 12:41:31.349
+[Server Id: 2] Server heartbeat at 2021-05-20 12:41:41.35
+2021-05-20 12:41:43.409  INFO 4853 --- [nio-9202-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-20 12:41:43.409  INFO 4853 --- [nio-9202-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-05-20 12:41:43.411  INFO 4853 --- [nio-9202-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+[Server id: 2] Proof of work valid.
+
+[SERVER2] Received submit report request.
+
+[SERVER2] Received an echo from 2
+
+[SERVER2] Received an echo from 1
+
+[SERVER2] Received an echo from 3
+
+[SERVER2] Received a ready from 1
+
+[SERVER2] Received a ready from 2
+
+[SERVER2] Received a ready from 3
+[Server Id: 2] Byzantine Atomic Register WRITE, sending ACK to clientId: 100
+[SERVER 2] Report submitted successfully for client 100
+[Server Id: 2] Server heartbeat at 2021-05-20 12:41:51.349
+
+[SERVER2] Received a ready from 4
+
+[SERVER2] Received an echo from 4
+
+[SERVER2] Received a ready from 4
+[Server Id: 2] Server heartbeat at 2021-05-20 12:42:01.349
+[Server Id: 2] Server heartbeat at 2021-05-20 12:42:11.349
+[Server Id: 2] Server heartbeat at 2021-05-20 12:42:21.349
+[Server id: 2] Proof of work valid.
+
+[SERVER2] Received get client issued proofs request.
+[Server Id: 2] Server heartbeat at 2021-05-20 12:42:31.349
+
+[SERVER2] Received an echo from 2
+
+[SERVER2] Received an echo from 3
+
+[SERVER2] Received an echo from 1
+
+[SERVER2] Received a ready from 1
+
+[SERVER2] Received a ready from 2
+
+[SERVER2] Received a ready from 3
+
+[SERVER2] Received an echo from 4
+
+[SERVER2] Received a ready from 4
+[Server Id: 2] Server heartbeat at 2021-05-20 12:42:41.35
+[Server Id: 2] Server heartbeat at 2021-05-20 12:42:51.349
+[Server Id: 2] Server heartbeat at 2021-05-20 12:43:01.349
+[Server id: 2] Proof of work valid.
+
+[SERVER2] Received get client issued proofs request.
+
+[SERVER2] Received an echo from 1
+
+[SERVER2] Received an echo from 3
+
+[SERVER2] Received an echo from 2
+
+[SERVER2] Received a ready from 2
+
+[SERVER2] Received a ready from 1
+[Server Id: 2] Server heartbeat at 2021-05-20 12:43:11.349
+
+[SERVER2] Received a ready from 3
+
+[SERVER2] Received an echo from 4
+
+[SERVER2] Received a ready from 4
+[Server Id: 2] Server heartbeat at 2021-05-20 12:43:21.35
+[Server Id: 2] Server heartbeat at 2021-05-20 12:43:31.35
